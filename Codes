@@ -1,0 +1,30 @@
+print("===== NUMBER SYSTEM CONVERTER =====")
+
+print("1. Decimal to Binary")
+print("2. Decimal to Octal")
+print("3. Decimal to Hexadecimal")
+print("4. Display All")
+
+choice = int(input("Enter your choice: "))
+
+number = int(input("Enter a decimal integer: "))
+
+if number < 0:
+    print("Please enter a non-negative integer.")
+
+elif choice == 1:
+    print("Binary:", bin(number)[2:])
+
+elif choice == 2:
+    print("Octal:", oct(number)[2:])
+
+elif choice == 3:
+    print("Hexadecimal:", hex(number)[2:].upper())
+
+elif choice == 4:
+    print("Binary:", bin(number)[2:])
+    print("Octal:", oct(number)[2:])
+    print("Hexadecimal:", hex(number)[2:].upper())
+
+else:
+    print("Invalid choice!")
